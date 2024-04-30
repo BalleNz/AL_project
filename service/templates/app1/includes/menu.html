@@ -1,0 +1,10 @@
+<header>
+    <h2>Menu:</h2>
+    <ul>
+        {% for menu_item in menu %}
+        <li>
+            <a href="{% url menu_item.path_name %}">{{menu_item.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</header>
